@@ -35,7 +35,8 @@ public class MenuPrincipal {
             switch(opcion){
                 case 1: cargarArchivo();  //Cargar archivo
                     break;
-                case 2:   //Jugar
+                case 2:   Torneo llamarTorneo = new Torneo(personajes);  //Jugar
+                    llamarTorneo.iniciarTorneo();
                     break;
                 case 3:   //Generar reporte de mayor ataque
                     break;
@@ -95,10 +96,10 @@ public class MenuPrincipal {
             } 
         }
         
-        for(Personaje  p: personajes){
-            System.out.println(p);
-        }
-        System.out.println("");
+//        for(Personaje  p: personajes){
+//            System.out.println(p);
+//        }
+//        System.out.println("");
     }
     
     public static void mostrarInformacionDesarrollador(){

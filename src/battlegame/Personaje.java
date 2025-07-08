@@ -16,18 +16,6 @@ public class Personaje {
         this.vidaActual = saludBase*10;
     }
     
-    
-    public void recibirDanio(int danio){
-        System.out.println("El daño recibido fue de: "+danio);
-    }
-    
-    public void estaVivo(){
-        boolean vivo;
-    }
-    
-    
-    
-    
     public String getNombre() {
         return nombre;
     }
